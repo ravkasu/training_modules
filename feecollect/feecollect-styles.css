@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;    
+    justify-content: space-around;
+}
+/* .section1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px; 
+  } */
+.category {
+    display: inline-grid;
+    width: 145px;
+    min-height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* width: calc(50% - 20px); 50% width for each block with margin */
+    /* margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box; */
+}
+/* @media (max-width: 600px) {
+    .block {
+      width: calc(100% - 20px); 
+    }
+  } */
+.category:hover{
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.services-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Vertically center content */
+    align-items: center;
+    /* Horizontally center content */
+    min-height: 75px !important;
+}
+
+.category h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.box {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+.box img {
+    display: block;
+    margin: 0 auto;
+    /* Center images */
+    border-radius: 50%;
+    /* Rounded images */
+}
+
+.button {
+    background-color: #007bff;
+    /* Button color */
+    color: #fff;
+    /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    /* Button hover color */
+}
+
+
+
+.container-wrapper {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box-wrapper {
+    flex: 1;
+    height: 100px;
+}
+
+.logo_styles {
+    width: 10%;
+    margin: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    /* display: inline-flex; */
+    /* background: #3fb5bf url('BG.jpg') no-repeat; */
+    background: url(BG.jpg) repeat;
+    opacity: 0.5;
+    position: fixed;
+    /* left: 0; */
+    /* right: 0; */
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Apply focus styles to input fields */
+input:focus {
+    outline: none;
+    /* Remove default outline */
+    border-color: #3fb5bf;
+    /* Apply focus border color */
+    /* box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); Apply focus box shadow */
+}
+
+/* Add focus styles */
+input.invalid {
+    border-color: #dc3545;
+    /* box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25); */
+}
+
+select:focus {
+    /* outline: 1px solid red;  */
+    /* Example outline color */
+
+    outline: none;
+    /* Remove default outline */
+    border-color: #dc3545;
+    /* Apply focus border color */
+}
+
+.pos_right {
+    float: right !important;
+}
+
+.formbold-main-wrapper {
+    /* width: 100%; */
+    /* height: 100vh; */
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+    display: flex;
+    margin: 10px;
+}
+
+.formbold-form-wrapper {
+    margin: 0 auto;
+    /* max-width: 570px; */
+    /* width: 100%; */
+    /* background: white; */
+    /* padding: 10px; */
+}
+
+.formbold-form-img {
+    margin-bottom: 45px;
+}
+
+.formbold-input-group {
+    margin-bottom: 18px;
+}
+
+.formbold-form-select {
+    width: 100%;
+    padding: 12px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+}
+
+.formbold-input-radio-wrapper {
+    margin-bottom: 25px;
+}
+
+.formbold-radio-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formbold-radio-label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #07074d;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.formbold-input-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.formbold-radio-checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: 1px solid #3fb5bf;
+    border-radius: 50%;
+}
+
+.formbold-radio-label .formbold-input-radio:checked~.formbold-radio-checkmark {
+    background-color: #3fb5bf;
+}
+
+.formbold-radio-checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.formbold-radio-label .formbold-input-radio:checked~.formbold-radio-checkmark:after {
+    display: block;
+}
+
+.formbold-radio-label .formbold-radio-checkmark:after {
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    outline: none;
+    resize: none;
+}
+
+.formbold-form-input::placeholder {
+    color: #536387;
+}
+
+.formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-form-label {
+    color: #07074d;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formbold-btn {
+    text-align: center;
+    /* width: 100%; */
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #3fb5bf;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Process steps styling */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.step:hover {
+    background-color: #f0f0f0;
+}
+
+.step.active {
+    background-color: #3fb5bf;
+    color: #fff;
+}
+
+.step-number {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.step-text {
+    font-size: 14px;
+}
+
+/* Form styling (example) */
+#form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #3fb5bf;
+    border-radius: 5px;
+}
+
+
+
+.content_section {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+}
+
+.title-p {
+    font-size: 15px;
+    color: #2e2e2e;
+    font-weight: 700;
+    padding: 10px 0px 10px 0px;
+}
+
+.stepProgressBar {
+    margin: 0px;
+    padding: 0px;
+}
+
+.stepProgressBar li {
+    list-style-type: none;
+    float: left;
+    width: 20%;
+    position: relative;
+    text-align: center;
+}
+
+.stepProgressBar li.inProgress {
+    color: #666666 !important;
+    font-weight: 600;
+}
+
+.stepProgressBar li.inProgress:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    color: #00A9E0;
+    font-weight: 900;
+    font-size: 15px;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    border: 2px solid #280071;
+    display: block;
+    text-align: center;
+    margin: 0 auto 5px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.stepProgressBar li:before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    border: 1px solid #666666;
+    display: block;
+    text-align: center;
+    margin: 0 auto 5px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.stepProgressBar li span {
+    color: #000 !important;
+    font-size: 14px;
+}
+
+.input-container,
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+/* label {
+    width: 100px;
+    margin-right: 10px;
+    text-align: left;
+} */
+
+.inputField {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.normal_button {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Disabled button style */
+.normal_button.highlight {
+    background-color: #ccc;
+    /* Light gray background color */
+    cursor: not-allowed;
+    /* Change cursor to not-allowed */
+}
+
+.circle_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-left: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* @media screen {
+    .category {
+        display: inline-grid;
+        width: 23%;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+} */

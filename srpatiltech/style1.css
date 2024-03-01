@@ -1,0 +1,242 @@
+.ajax-progress {
+    display: inline-block;
+    padding: 1px 5px 2px 5px;
+}
+
+[dir="rtl"] .ajax-progress {
+    float: right;
+}
+
+.ajax-progress-throbber .throbber {
+    display: inline;
+    padding: 1px 6px 2px;
+    background: transparent url(/core/misc/throbber-active.gif) no-repeat 0 center;
+}
+
+.ajax-progress-throbber .message {
+    display: inline;
+    padding: 1px 5px 2px;
+}
+
+tr .ajax-progress-throbber .throbber {
+    margin: 0 2px;
+}
+
+.ajax-progress-bar {
+    width: 16em;
+}
+
+.ajax-progress-fullscreen {
+    position: fixed;
+    z-index: 1000;
+    top: 48.5%;
+    left: 49%;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    opacity: 0.9;
+    border-radius: 7px;
+    background-color: #232323;
+    background-image: url(/core/misc/loading-small.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+[dir="rtl"] .ajax-progress-fullscreen {
+    right: 49%;
+    left: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+}
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+    position: static !important;
+    overflow: visible;
+    clip: auto;
+    width: auto;
+    height: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.item-list__comma-list,
+.item-list__comma-list li {
+    display: inline;
+}
+
+.item-list__comma-list {
+    margin: 0;
+    padding: 0;
+}
+
+.item-list__comma-list li:after {
+    content: ", ";
+}
+
+.item-list__comma-list li:last-child:after {
+    content: "";
+}
+
+.system-status-counter__status-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.system-status-counter__status-icon:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center 2px;
+    background-size: 16px;
+}
+
+.system-status-counter__status-icon--error:before {
+    background-image: url(/core/misc/icons/e32700/error.svg);
+}
+
+.system-status-counter__status-icon--warning:before {
+    background-image: url(/core/misc/icons/e29700/warning.svg);
+}
+
+.system-status-counter__status-icon--checked:before {
+    background-image: url(/core/misc/icons/73b355/check.svg);
+}
+
+.system-status-report-counters__item {
+    width: 100%;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0;
+    text-align: center;
+    white-space: nowrap;
+    background-color: rgba(0, 0, 0, 0.063);
+}
+
+@media screen and (min-width:60em) {
+    .system-status-report-counters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .system-status-report-counters__item--half-width {
+        width: 49%;
+    }
+
+    .system-status-report-counters__item--third-width {
+        width: 33%;
+    }
+}
+
+.system-status-general-info__item {
+    margin-top: 1em;
+    padding: 0 1em 1em;
+    border: 1px solid #ccc;
+}
+
+.system-status-general-info__item-title {
+    border-bottom: 1px solid #ccc;
+}
+
+.tablesort {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+}
+
+.tablesort--asc {
+    background-image: url(/core/misc/icons/787878/twistie-down.svg);
+}
+
+.tablesort--desc {
+    background-image: url(/core/misc/icons/787878/twistie-up.svg);
+}
+
+.poll {
+    overflow: hidden;
+}
+
+.poll .bar {
+    height: 1em;
+    margin: 1px 0;
+    background-color: #ddd;
+}
+
+.poll .bar .foreground {
+    background-color: #000;
+    height: 1em;
+    float: left;
+}
+
+.poll dl,
+.poll dd {
+    margin: 0;
+}
+
+.poll .links {
+    text-align: center;
+}
+
+.poll .percent {
+    text-align: right;
+}
+
+.poll .total {
+    text-align: center;
+}
+
+.poll .vote-form {
+    text-align: center;
+}
+
+.poll .vote-form {
+    text-align: left;
+}
+
+.poll .vote-form .poll-title {
+    font-weight: bold;
+}
+
+.poll-chtext {
+    width: 80%;
+}
+
+.poll-chvotes .form-text {
+    width: 85%;
+}
+
+/* h1::first-letter,
+h2::first-letter,
+h3::first-letter,
+h4::first-letter,
+h5::first-letter,
+h6::first-letter,
+.link-list__link a::first-letter {
+    text-transform: lowercase !important;
+} */
+
+.link-list__link a {
+    display: inline-block;
+}
+
+.paragraph--unpublished {
+    background-color: #fff4f4;
+}
