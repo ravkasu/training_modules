@@ -23,7 +23,7 @@
             </div>
 
         </div>
-        <h1 class="content-block__title">About SR Patil Tech: your digital enablement partner.</h1>
+        <h1 class="content-block__title">About Us</h1>
         <!--<p class="content-block__description">As your digital enablement partner, we apply our
             talent-first approach to accelerate your digital journey, helping you unleash your potential
             and unlock unseen opportunities.</p>
@@ -47,6 +47,12 @@
                     <h2 class="block__title">A talent-first digital enablement approach.</h2>
                     <div class="block__description block__description--s block__description--dark block__description--optional">
                         <p>At srpatiltech, we believe that when you bring talent together,
+                            inject experience and follow a proven approach, amazing things can be
+                            achieved. You select the combination of models to accelerate your
+                            digital enablement.</br>At srpatiltech, we believe that when you bring talent together,
+                            inject experience and follow a proven approach, amazing things can be
+                            achieved. You select the combination of models to accelerate your
+                            digital enablement.</br>At srpatiltech, we believe that when you bring talent together,
                             inject experience and follow a proven approach, amazing things can be
                             achieved. You select the combination of models to accelerate your
                             digital enablement.</p>

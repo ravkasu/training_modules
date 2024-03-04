@@ -12,10 +12,10 @@
                     <a href="index.php" class="breadcrumb__link hidden--from-l">home</a>
                     <ul class="breadcrumb__list hidden--until-l">
                         <li class="breadcrumb__item">
-                            <a class="breadcrumb__link" href="index.php">home</a>
+                            <a class="breadcrumb__link" href="index.php">Features</a>
                         </li>
                         <li class="breadcrumb__item">
-                            Contact Us
+                            Features
                         </li>
                     </ul>
                 </nav>
@@ -23,7 +23,7 @@
             </div>
 
         </div>
-        <h1 class="content-block__title">Contact Us</h1>
+        <h1 class="content-block__title">Features</h1>
         <!--<p class="content-block__description">As your digital enablement partner, we apply our
             talent-first approach to accelerate your digital journey, helping you unleash your potential
             and unlock unseen opportunities.</p>
@@ -44,29 +44,18 @@
         <div class="block block--s bluex-teaser">
             <div class="block__wrapper block__wrapper--stacked wrapper">
                 <div class="block__header block__header--l block__header--split">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="block__title">Contact Form</h2>
-                            <form class="row g-3">
-                                <div class="col-md-12">
-                                    <label for="inputEmail4" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
-                                </div>
-                                <div class="col-md-12">
-                                    <label for="inputAddress" class="form-label">Any Comments</label>
-                                    <input type="textarea" class="form-control" id="inputAddress" placeholder="Anything...">
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary">Send Request</button>
-                                </div>
-                            </form>
-
-                        </div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3">
-                            <h3>Address</h3>
-                            <Address>Nagar street, Madhapur, Hyderabad, TS, India - 500007</Address>
-                        </div>
+                    <h2 class="block__title">A talent-first digital enablement approach.</h2>
+                    <div class="block__description block__description--s block__description--dark block__description--optional">
+                        <p>At srpatiltech, we believe that when you bring talent together,
+                            inject experience and follow a proven approach, amazing things can be
+                            achieved. You select the combination of models to accelerate your
+                            digital enablement.</br>At srpatiltech, we believe that when you bring talent together,
+                            inject experience and follow a proven approach, amazing things can be
+                            achieved. You select the combination of models to accelerate your
+                            digital enablement.</br>At srpatiltech, we believe that when you bring talent together,
+                            inject experience and follow a proven approach, amazing things can be
+                            achieved. You select the combination of models to accelerate your
+                            digital enablement.</p>
                     </div>
 
                 </div>

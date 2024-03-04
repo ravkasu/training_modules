@@ -75,7 +75,7 @@
                                                         </use>
                                                     </svg>
                                                 </span>
-                                                <a href="approach/talent-services/" class="hidden--until-l button button--m button--white">learn
+                                                <a href="about.php" class="hidden--until-l button button--m button--white">learn
                                                     more</a>
                                             </div>
                                             <div class="teaser__body">
@@ -101,7 +101,7 @@
                                                         </use>
                                                     </svg>
                                                 </span>
-                                                <a href="approach/global-talent-centers/" class="hidden--until-l button button--m button--white">learn
+                                                <a href="about.php" class="hidden--until-l button button--m button--white">learn
                                                     more</a>
                                             </div>
                                             <div class="teaser__body">
@@ -127,7 +127,7 @@
                                                         </use>
                                                     </svg>
                                                 </span>
-                                                <a href="approach/managed-solutions/" class="hidden--until-l button button--m button--white">learn
+                                                <a href="about.php" class="hidden--until-l button button--m button--white">learn
                                                     more</a>
                                             </div>
                                             <div class="teaser__body">
@@ -165,7 +165,7 @@
                                     people in a digital environment.</p>
                             </div>
 
-                            <a href="careers/current-opportunities/" class="button">explore openings</a>
+                            <a href="contact.php" class="button">explore openings</a>
                         </div>
                     </div>
                 </div>
@@ -229,7 +229,7 @@
                                                     </use>
                                                 </svg>
                                             </span>
-                                            <a href="data-analytics/" class="hidden--until-l button button--s button--white">learn
+                                            <a href="about.php" class="hidden--until-l button button--s button--white">learn
                                                 more</a>
                                         </div>
                                         <div class="teaser__body text-body-m">
@@ -259,7 +259,7 @@
                                                     </use>
                                                 </svg>
                                             </span>
-                                            <a href="digital-product-engineering/" class="hidden--until-l button button--s button--white">learn
+                                            <a href="about.php" class="hidden--until-l button button--s button--white">learn
                                                 more</a>
                                         </div>
                                         <div class="teaser__body text-body-m">
@@ -290,7 +290,7 @@
                                                     </use>
                                                 </svg>
                                             </span>
-                                            <a href="cloud/" class="hidden--until-l button button--s button--white">learn
+                                            <a href="about.php" class="hidden--until-l button button--s button--white">learn
                                                 more</a>
                                         </div>
                                         <div class="teaser__body text-body-m">
@@ -388,7 +388,7 @@
                                 </p>
                             </div>
 
-                            <a href="approach/" class="button">our enablement models</a>
+                            <a href="about.php" class="button">our enablement models</a>
                         </div>
                     </div>
                 </div>
@@ -415,7 +415,7 @@
                                     of interactions.</p>
                             </div>
 
-                            <a href="insights/success-stories/" class="button">learn more</a>
+                            <a href="about.php" class="button">learn more</a>
                         </div>
                     </div>
                 </div>
@@ -426,7 +426,7 @@
                             <p>ready to partner with srpatiltech?</p>
                         </div>
 
-                        <a href="contact-us/" class="button">get in touch</a>
+                        <a href="contact.php" class="button">get in touch</a>
                     </div>
                 </div>
 
@@ -436,4 +436,5 @@
 
     </div>
 </main>
+
 <?php include("footer.php"); ?>
